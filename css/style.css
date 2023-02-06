@@ -1,0 +1,987 @@
+/*
+* ---------------------------------------------------------------------------
+* 01. Global Area
+* ---------------------------------------------------------------------------
+*/
+
+body {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #444c59;
+    font-family: 'Open Sans', sans-serif;
+}
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    line-height: 1.2;
+    font-family: 'Open Sans', sans-serif;
+}
+p {
+    margin-bottom: 15px;
+}
+a {
+    text-decoration: none;
+    color: #444c59;
+    transition: all 0.5s;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+iframe {
+    max-width: 100%;
+    border: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.media-right img,
+.media-left img {
+    max-width: inherit;
+}
+.owl-carousel .owl-item img {
+    width: auto;
+}
+::-webkit-input-placeholder {
+    color: inherit;
+}
+button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+button:focus,
+input:focus {
+    outline: none;
+}
+
+/*
+* ---------------------------------------------------------------------------
+* 02. Full Area
+* ---------------------------------------------------------------------------
+*/
+
+table {
+    font-size: 12px
+}
+
+.ms_attribute_label {
+    font-size: 12px
+}
+
+.ms_attribute_cell {
+    font-size: 12px
+}
+
+#pagebg {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/bg-grey.jpg);
+    text-align: center;
+    background-color: #0f1d42;
+    margin-top: 0px;
+    background-repeat: repeat-y;
+    background-position: center 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#wrapper {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/body-bg-top.jpg);
+    position: relative;
+    text-align: left;
+    margin: 0px auto;
+    width: 900px;
+    background-repeat: no-repeat;
+    background-position: center 150px
+}
+
+#leftcol {
+    margin-top: 13px;
+    width: 225px;
+    float: left;
+    margin-left: 8px;
+    margin-right: 13px
+}
+
+#content {
+    min-height: 200px;
+    background: url(https://hiknik.com/ebay/manvicon/new/img/body-bg-top.jpg) #fbfcfc no-repeat center top;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#rightcol {
+    margin-top: 13px;
+    width: 640px;
+    float: left;
+    margin-right: 8px
+}
+
+#header {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/header-bg.jpg);
+    width: 900px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 125px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#logo {
+    position: relative;
+    float: left;
+    top: 20px;
+    left: 17px
+}
+
+#logo img {
+    width: auto;
+    height: 61px;
+}
+
+#searchboxwrapper {
+    position: relative;
+    float: left;
+    top: 48px;
+    left: 230px
+}
+
+#searchbox {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/search-bg.png);
+    width: 175px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 19px;
+    top: 48px;
+    left: 230px
+}
+
+.search-input {
+    position: relative;
+    float: left;
+    top: 6px;
+    left: 25px
+}
+
+.search-submit {
+    position: relative;
+    float: left;
+    top: -10px;
+    left: 40px
+}
+
+.searchtext {
+    position: relative;
+    padding-left: 17px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    clear: both;
+    font-size: 12px;
+    top: -5px
+}
+
+#headernav {
+    text-align: center;
+    line-height: 12px;
+    background-color: #64acdf;
+    width: 900px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    height: 31px;
+    clear: both;
+    font-size: 20px;
+    overflow: hidden;
+    padding-top: 3px
+}
+
+.button {
+    text-align: center;
+    padding-bottom: 0.55em;
+    margin: 0px 5px;
+    outline-style: none;
+    outline-color: invert;
+    padding-left: 2em;
+    outline-width: medium;
+    padding-right: 2em;
+    display: inline-block;
+    font: 14px/100% arial, helvetica, sans-serif;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 0.5em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em 0.5em 0.5em 0.5em
+}
+
+.button:hover {
+    text-decoration: none
+}
+
+.button:active {
+    position: relative;
+    top: 1px
+}
+
+.medium {
+    padding-bottom: 0.42em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: 12px;
+    padding-top: 0.4em
+}
+
+.blue {
+    border-bottom: #0076a3 1px solid;
+    filter: progid: dximagetransform.microsoft.gradient( startcolorstr='#0d3e95', endcolorstr='#1588c3', gradienttype=0);
+    border-left: #0076a3 1px solid;
+    background: none transparent scroll repeat 0% 0%;
+    color: #d9eef7;
+    border-top: #0076a3 1px solid;
+    border-right: #0076a3 1px solid
+}
+
+.blue:visited {
+    border-bottom: #0076a3 1px solid;
+    filter: progid: dximagetransform.microsoft.gradient( startcolorstr='#0d3e95', endcolorstr='#1588c3', gradienttype=0);
+    border-left: #0076a3 1px solid;
+    background: none transparent scroll repeat 0% 0%;
+    color: #d9eef7;
+    border-top: #0076a3 1px solid;
+    border-right: #0076a3 1px solid
+}
+
+.blue:active {
+    border-bottom: #0076a3 1px solid;
+    filter: progid: dximagetransform.microsoft.gradient( startcolorstr='#0d3e95', endcolorstr='#1588c3', gradienttype=0);
+    border-left: #0076a3 1px solid;
+    background: none transparent scroll repeat 0% 0%;
+    color: #d9eef7;
+    border-top: #0076a3 1px solid;
+    border-right: #0076a3 1px solid
+}
+
+.blue:link {
+    border-bottom: #0076a3 1px solid;
+    filter: progid: dximagetransform.microsoft.gradient( startcolorstr='#0d3e95', endcolorstr='#1588c3', gradienttype=0);
+    border-left: #0076a3 1px solid;
+    background: none transparent scroll repeat 0% 0%;
+    color: #d9eef7;
+    border-top: #0076a3 1px solid;
+    border-right: #0076a3 1px solid
+}
+
+.blue:hover {
+    filter: progid: dximagetransform.microsoft.gradient( startcolorstr='#0d3e95', endcolorstr='#1476b7', gradienttype=0);
+    background: none transparent scroll repeat 0% 0%;
+    color: #fff
+}
+
+#leftcol-custservice {
+    filter: progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=0), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=90), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=180), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=270);
+    padding-bottom: 4px;
+    background-color: #fff;
+    padding-left: 4px;
+    width: 219px;
+    padding-right: 4px;
+    zoom: 1;
+    padding-top: 4px;
+    -webkit-box-shadow: 0px 0px 3px 1px #ccc;
+    -moz-box-shadow: 0px 0px 3px 1px #ccc;
+    box-shadow: 0px 0px 3px 1px #ccc
+}
+
+.leftnavhead {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/lkq-leftnav-bg.jpg);
+    border-bottom: #b1b835 3px solid;
+    background-color: #144a8a;
+    margin: 0px;
+    background-repeat: repeat-x;
+    background-position: 50% top;
+    height: 38px
+}
+
+#headericon {
+    position: relative;
+    width: 30px;
+    float: left;
+    top: -3px
+}
+
+.custserviceimage {
+    position: relative;
+    top: 8px;
+    left: 7px
+}
+
+.left-nav-header-text {
+    position: relative;
+    text-transform: uppercase;
+    width: 200px;
+    font-family: century gothic, sans-serif;
+    letter-spacing: 0.07em;
+    color: #fff;
+    font-size: 14px;
+    top: -12px;
+    font-weight: 400;
+    left: 45px
+}
+
+#left-nav-header-text2 {
+    position: relative;
+    text-transform: uppercase;
+    width: 175px;
+    font-family: century gothic, sans-serif;
+    float: left;
+    letter-spacing: 0.07em;
+    color: #fff;
+    font-size: 14px;
+    top: 10px;
+    font-weight: 400;
+    left: 15px
+}
+
+#custservice3 {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/lkq-leftnav-bg-grey.jpg);
+    border-bottom: #c3c3c5 1px solid;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    background-position: center top;
+    background-size: cover;
+    height: 28px;
+    color: #414042;
+    clear: both;
+    font-size: 13px;
+    border-top: #c3c3c5 1px solid;
+    font-weight: bold;
+    padding-top: 5px
+}
+
+#custservice5 {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/lkq-leftnav-bg-grey.jpg);
+    border-bottom: #c3c3c5 1px solid;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    background-position: center top;
+    background-size: cover;
+    height: 28px;
+    color: #414042;
+    clear: both;
+    font-size: 13px;
+    border-top: #c3c3c5 1px solid;
+    font-weight: bold;
+    padding-top: 5px
+}
+
+#custservice7 {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/lkq-leftnav-bg-grey.jpg);
+    border-bottom: #c3c3c5 1px solid;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    background-position: center top;
+    background-size: cover;
+    height: 28px;
+    color: #414042;
+    clear: both;
+    font-size: 13px;
+    border-top: #c3c3c5 1px solid;
+    font-weight: bold;
+    padding-top: 5px
+}
+
+#custservice4 {
+    padding-bottom: 10px;
+    line-height: 1.5em;
+    background-color: #f1f2f2;
+    font-family: 'Open Sans', sans-serif;
+    color: #58595b;
+    clear: both;
+    font-size: 12px;
+    padding-top: 10px
+}
+
+#custservice6 {
+    padding-bottom: 10px;
+    line-height: 1.5em;
+    background-color: #f1f2f2;
+    font-family: 'Open Sans', sans-serif;
+    color: #58595b;
+    clear: both;
+    font-size: 12px;
+    padding-top: 10px
+}
+
+#custservice8 {
+    padding-bottom: 10px;
+    line-height: 1.5em;
+    background-color: #f1f2f2;
+    padding-left: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: #58595b;
+    clear: both;
+    font-size: 12px;
+    padding-top: 10px
+}
+
+#custservice9 {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/lkq-leftnav-bg-grey-grad.jpg);
+    padding-bottom: 10px;
+    line-height: 1.5em;
+    background-repeat: repeat-x;
+    font-family: 'Open Sans', sans-serif;
+    background-position: center top;
+    height: 203px;
+    color: #58595b;
+    clear: both;
+    font-size: 12px;
+    padding-top: 10px
+}
+
+#custservice10 {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/lkq-leftnav-bg-grey-grad.jpg);
+    padding-bottom: 10px;
+    line-height: 1.2em;
+    background-repeat: repeat-x;
+    background-position: center -20px;
+    color: #58595b;
+    clear: both;
+    padding-top: 10px
+}
+
+.arialbold14 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold
+}
+
+.arialbold13 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px
+}
+
+#leftcol-findparts {
+    filter: progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=0), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=90), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=180), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=270);
+    padding-bottom: 4px;
+    background-color: #fff;
+    margin-top: 15px;
+    padding-left: 4px;
+    width: 219px;
+    padding-right: 4px;
+    zoom: 1;
+    padding-top: 4px;
+    -webkit-box-shadow: 0px 0px 3px 1px #ccc;
+    -moz-box-shadow: 0px 0px 3px 1px #ccc;
+    box-shadow: 0px 0px 3px 1px #ccc
+}
+
+#custservice2 {
+    background-color: #acd0e3;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    height: 28px;
+    color: #223c75;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 9px
+}
+
+.feedbacktext {
+    padding-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    padding-top: 10px
+}
+
+#year {
+    padding-left: 8px;
+    width: 60px;
+    float: left;
+    height: 30px;
+    clear: both
+}
+
+#model {
+    padding-left: 8px;
+    width: 60px;
+    float: left;
+    height: 30px;
+    clear: both
+}
+
+#part {
+    padding-left: 8px;
+    width: 60px;
+    float: left;
+    height: 30px;
+    clear: both
+}
+
+#formfield {
+    width: 120px;
+    padding-right: 20px;
+    float: right;
+    height: 30px
+}
+
+#submitbutton {
+    text-align: center;
+    clear: both;
+    padding-top: 15px
+}
+
+#listingtitle {
+    text-align: center;
+    line-height: 1.2em;
+    margin-top: 20px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 5px;
+    color: #262262;
+    font-size: 20px;
+    font-weight: bold
+}
+
+#mainproductpicture {
+    text-align: center
+}
+
+#mainproductpicture img {
+    filter: progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=0), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=90), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=180), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=270);
+    padding-bottom: 8px;
+    background-color: #ffffff;
+    margin-top: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+    zoom: 1;
+    margin-bottom: 15px;
+    padding-top: 8px;
+    -webkit-box-shadow: 0px 0px 3px 1px #ccc;
+    -moz-box-shadow: 0px 0px 3px 1px #ccc;
+    box-shadow: 0px 0px 3px 1px #ccc
+}
+
+#mainproductpicture img.border {
+    border-bottom: #cccccc 1px solid;
+    border-left: #cccccc 1px solid;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-top: #cccccc 1px solid;
+    border-right: #cccccc 1px solid;
+    padding-top: 8px
+}
+
+#thumbgrid img {
+    margin: 2px
+}
+
+#thumbgrid {
+    text-align: center;
+    filter: progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=0), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=90), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=180), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=270);
+    padding-bottom: 6px;
+    overflow-y: scroll;
+    background-color: #fff;
+    margin-top: 1px;
+    padding-left: 6px;
+    padding-right: 6px;
+    zoom: 1;
+    margin-bottom: 1px;
+    max-height: 300px;
+    padding-top: 6px;
+    -webkit-box-shadow: 0px 0px 3px 1px #ccc;
+    -moz-box-shadow: 0px 0px 3px 1px #ccc;
+    box-shadow: 0px 0px 3px 1px #ccc
+}
+
+#customfield3 {
+    text-align: center;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px
+}
+
+#thumbtop {
+    text-align: center
+}
+
+#thumbbottom {
+    text-align: center
+}
+
+#centercontent {
+    border-bottom: #ccc 1px solid;
+    border-left: #ccc 1px solid;
+    border-top: #ccc 1px solid;
+    border-right: #ccc 1px solid;
+    padding-top: 5px
+}
+
+#bluearrow1 {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/down-arrow.png);
+    z-index: 1;
+    position: relative;
+    margin-top: -2px;
+    width: 20px;
+    background-repeat: no-repeat;
+    height: 10px;
+    margin-left: 80px
+}
+
+#bluearrow2 {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/down-arrow.png);
+    z-index: 1;
+    position: relative;
+    margin-top: -2px;
+    width: 20px;
+    background-repeat: no-repeat;
+    height: 10px;
+    margin-left: 140px
+}
+
+#bluearrow3 {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/down-arrow.png);
+    z-index: 1;
+    position: relative;
+    margin-top: -2px;
+    width: 20px;
+    background-repeat: no-repeat;
+    height: 10px;
+    margin-left: 210px
+}
+
+#greenheaderstripe {
+    background-color: #b0d46d;
+    width: 5px;
+    float: left;
+    height: 25px
+}
+
+.contentheadertext {
+    position: relative;
+    top: 3px
+}
+
+#dkblueheaderstripe {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/contentheaderdkblue.jpg);
+    text-transform: uppercase;
+    padding-left: 15px;
+    width: 172px;
+    background-repeat: repeat-x;
+    font-family: century gothic, sans-serif;
+    background-position: center center;
+    float: left;
+    letter-spacing: 0.07em;
+    height: 25px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400
+}
+
+#dkblueheaderstripe2 {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/contentheaderdkblue.jpg);
+    text-transform: uppercase;
+    padding-left: 15px;
+    width: 310px;
+    background-repeat: repeat-x;
+    font-family: century gothic, sans-serif;
+    background-position: center center;
+    float: left;
+    letter-spacing: 0.07em;
+    height: 25px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400
+}
+
+#dkblueheaderstripe3 {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/contentheaderdkblue.jpg);
+    text-transform: uppercase;
+    padding-left: 15px;
+    width: 409px;
+    background-repeat: repeat-x;
+    font-family: century gothic, sans-serif;
+    background-position: center center;
+    float: left;
+    letter-spacing: 0.07em;
+    height: 25px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400
+}
+
+#ltblueheaderstripe {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/contentheaderltblue.jpg);
+    width: 706px;
+    background-repeat: repeat-x;
+    background-position: center center;
+    float: left;
+    height: 25px
+}
+
+#ltblueheaderstripe2 {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/contentheaderltblue.jpg);
+    width: 307px;
+    background-repeat: repeat-x;
+    background-position: center center;
+    float: left;
+    height: 25px
+}
+
+#ltblueheaderstripe3 {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/contentheaderltblue.jpg);
+    width: 469px;
+    background-repeat: repeat-x;
+    background-position: center center;
+    float: left;
+    height: 25px
+}
+
+#lqkcontentbg {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/description-bg.jpg);
+    z-index: 0;
+    border-bottom: #ccc 1px solid;
+    position: relative;
+    padding-bottom: 15px;
+    line-height: 1.2em;
+    background-color: #eeefef;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    background-position: center top;
+    color: #58595b;
+    font-size: 12px;
+    border-top: #ccc 1px solid;
+    top: -8px;
+    padding-top: 15px
+}
+
+#lqkcontentbg2 {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/description-bg.jpg);
+    z-index: 0;
+    position: relative;
+    padding-bottom: 15px;
+    line-height: 1.2em;
+    background-color: #eeefef;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    background-position: center top;
+    color: #58595b;
+    font-size: 12px;
+    border-top: #ccc 1px solid;
+    top: -8px;
+    padding-top: 15px
+}
+
+.lkqcontentbg2 {
+    font-size: 12px !important
+}
+
+.clicktoenlarge {
+    text-align: center;
+    padding-bottom: 5px;
+    line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    color: #58595b;
+    font-size: 12px;
+    padding-top: 5px
+}
+
+#fullwidthwrapper {
+    text-align: left;
+    margin: 0px auto;
+    width: 100%;
+    clear: both;
+    padding-top: 20px
+}
+
+#pleasenotebox {
+    filter: progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=0), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=90), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=180), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=270);
+    padding-bottom: 4px;
+    padding-left: 4px;
+    width: 876px;
+    padding-right: 4px;
+    zoom: 1;
+    margin-left: auto;
+    clear: both;
+    margin-right: auto;
+    padding-top: 4px;
+    -webkit-box-shadow: 0px 0px 3px 1px #ccc;
+    -moz-box-shadow: 0px 0px 3px 1px #ccc;
+    box-shadow: 0px 0px 3px 1px #ccc
+}
+
+#pleasenoteheader {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/full-width-header.jpg);
+    width: 876px;
+    background-repeat: repeat-x;
+    background-position: center top;
+    height: 40px
+}
+
+.headertext-pleasenote {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: century gothic, sans-serif;
+    letter-spacing: 0.07em;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 8px
+}
+
+#pleasenotecontent {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/lkq-leftnav-bg-grey-grad.jpg);
+    padding-bottom: 15px;
+    line-height: 1.2em;
+    background-color: #fff;
+    padding-left: 15px;
+    width: auto;
+    padding-right: 15px;
+    background-repeat: repeat-x;
+    font-family: 'Open Sans', sans-serif;
+    background-position: center -20px;
+    color: #414042;
+    font-size: 12px;
+    padding-top: 15px
+}
+
+#pleasenotecontent-half {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/lkq-leftnav-bg-grey-grad.jpg);
+    padding-bottom: 15px;
+    line-height: 1.2em;
+    background-color: #fff;
+    padding-left: 15px;
+    width: 420px;
+    padding-right: 15px;
+    background-repeat: repeat-x;
+    font-family: 'Open Sans', sans-serif;
+    background-position: center -20px;
+    color: #414042;
+    font-size: 12px;
+    padding-top: 15px
+}
+
+#halfsizeboxwrapper {
+    text-align: left;
+    margin: 0px auto;
+    width: 884px;
+    padding-top: 5px
+}
+
+#halfsizebox-left {
+    width: 430px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px
+}
+
+#halfsizebox-right {
+    width: 425px;
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px
+}
+
+#shippingbox {
+    filter: progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=0), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=90), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=180), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=270);
+    padding-bottom: 4px;
+    padding-left: 4px;
+    width: 420px;
+    padding-right: 4px;
+    zoom: 1;
+    padding-top: 4px;
+    -webkit-box-shadow: 0px 0px 3px 1px #ccc;
+    -moz-box-shadow: 0px 0px 3px 1px #ccc;
+    box-shadow: 0px 0px 3px 1px #ccc
+}
+
+#paymentsbox {
+    filter: progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=0), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=90), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=180), progid: dximagetransform.microsoft.shadow(color=#cccccc, strength=2, direction=270);
+    padding-bottom: 4px;
+    padding-left: 4px;
+    width: 420px;
+    padding-right: 4px;
+    zoom: 1;
+    padding-top: 4px;
+    -webkit-box-shadow: 0px 0px 3px 1px #ccc;
+    -moz-box-shadow: 0px 0px 3px 1px #ccc;
+    box-shadow: 0px 0px 3px 1px #ccc
+}
+
+#shippingheader {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/full-width-header.jpg);
+    width: 420px;
+    background-repeat: repeat-x;
+    background-position: center top;
+    height: 40px
+}
+
+#paymentsheader {
+    background-image: url(https://hiknik.com/ebay/manvicon/new/img/full-width-header.jpg);
+    width: 420px;
+    background-repeat: repeat-x;
+    background-position: center top;
+    height: 40px
+}
+
+p.center {
+    text-align: center
+}
+
+p.center2 {
+    text-align: center;
+    color: #0f1d42;
+    font-weight: bold
+}
+
+span.bluetext {
+    color: #0f1d42;
+    font-weight: bold
+}
+
+p.redtext {
+    color: #be1e2d;
+    font-weight: bold
+}
+
+.style2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-logo-area{
+    text-align: center;
+}
+.footer-logo {
+    height: 60px;
+    border: 0;
+    padding-top: 15px;
+}
+.hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 1px; color: #cccccc;
+    border-style: none;
+    background-color: #cccccc;
+}
