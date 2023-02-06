@@ -985,3 +985,8 @@ p.redtext {
     border-style: none;
     background-color: #cccccc;
 }
+
+.footer-logo-area,
+#logo {
+    display: none;
+}
